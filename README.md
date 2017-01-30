@@ -15,6 +15,7 @@ const tvdb = new (require('tvdbapi'))({
     apikey: <your_api_key>
     endpoint: //optional
     version: //optional
+    language: //optional
 });
 ```
 
