@@ -9,89 +9,105 @@
     "/refresh_token": {
         "url": "/refresh_token"
     },
-    "/episodes/get": {
+    "/episodes/details": {
         "url": "/episodes/:id"
     },
     "/languages/all": {
         "url": "/languages"
     },
-    "/languages/get": {
+    "/languages/details": {
         "url": "/languages/:id"
     },
     "/search/series": {
-        "url": "/search/series"
+        "url": "/search/series?name=&imdbId=&zap2itId=",
+        "optional": ["name", "imdbId", "zap2itId"]
     },
-    "/": {
+    "/search/get_series_params": {
         "url": "/search/series/params"
     },
-    "/": {
+    "/series/details": {
         "url": "/series/:id"
     },
-    "/": {
+    "/series/actors": {
         "url": "/series/:id/actors"
     },
-    "/": {
-        "url": "/series/:id/episodes"
+    "/series/episodes/all": {
+        "url": "/series/:id/episodes",
+        "pagination": true
     },
-    "/": {
-        "url": "/series/:id/episodes/query"
+    "/series/episodes/query": {
+        "url": "/series/:id/episodes/query?absoluteNumber=&airedSeason=&airedEpisode=&dvdSeason=&dvdEpisode=&imdbId=",
+        "pagination": true,
+        "optional": ["absoluteNumber", "airedSeason", "airedEpisode", "dvdSeason", "dvdEpisode", "imdbId"]
     },
-    "/": {
+    "/series/episodes/get_query_params": {
         "url": "/series/:id/episodes/query/params"
     },
-    "/": {
+    "/series/episodes/summary": {
         "url": "/series/:id/episodes/summary"
     },
-    "/": {
-        "url": "/series/:id/filter"
+    "/series/episodes/filter": {
+        "url": "/series/:id/filter?keys="
     },
-    "/": {
+    "/series/episodes/get_filter_params": {
         "url": "/series/:id/filter/params"
     },
-    "/": {
+    "/series/images/all": {
         "url": "/series/:id/images"
     },
-    "/": {
-        "url": "/series/:id/images/query"
+    "/series/images/query": {
+        "url": "/series/:id/images/query?keyType=&resolution=&subKey=",
+        "optional": ["keyType", "resolution", "subKey"]
     },
-    "/": {
+    "/series/images/get_query_params": {
         "url": "/series/:id/images/query/params"
     },
-    "/": {
-        "url": "/updated/query"
+    "/updated/query": {
+        "url": "/updated/query?fromTime=&toTime=",
+        "optional": ["toTime"]
     },
-    "/": {
+    "/updated/get_query_params": {
         "url": "/updated/query/params"
     },
-    "/": {
-        "url": "/user"
+    "/user/details": {
+        "url": "/user",
+        "auth": true
     },
-    "/": {
-        "url": "/user/favorites"
+    "/user/favorites/all": {
+        "url": "/user/favorites",
+        "auth": true
     },
-    "/": {
+    "/user/favorites/remove": {
         "url": "/user/favorites/:id",
-        "method": "DELETE"
+        "method": "DELETE",
+        "auth": true
     },
-    "/": {
+    "/user/favorites/add": {
         "url": "/user/favorites/:id",
-        "method": "PUT"
+        "method": "PUT",
+        "auth": true
     },
-    "/": {
-        "url": "/user/ratings"
+    "/users/ratings/all": {
+        "url": "/user/ratings",
+        "auth": true
     },
-    "/": {
-        "url": "/user/ratings/query"
+    "/users/ratings/query": {
+        "url": "/user/ratings/query?itemType=",
+        "auth": true,
+        "optional": ["itemType"]
     },
-    "/": {
-        "url": "/user/ratings/query/params"
+    "/users/ratings/get_query_params": {
+        "url": "/user/ratings/query/params",
+        "auth": true
     },
-    "/": {
+    "/users/rate": {
         "url": "/user/ratings/:itemType/:itemId/:itemRating",
-        "method": "PUT"
+        "method": "PUT",
+        "auth": true
     },
-    "/": {
+    "/user/unrate": {
         "url": "/users/ratings/:itemType/:itemId",
-        "method": "DELETE"
+        "method": "DELETE",
+        "auth": true
     }
 }
