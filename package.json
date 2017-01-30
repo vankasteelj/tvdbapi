@@ -1,0 +1,24 @@
+{
+    "name": "tvdbapi",
+    "version": "0.0.0",
+    "description": "thetvdb.com api wrapper",
+    "author": {
+        "name": "vankasteelj",
+        "email": "vankasteelj@gmail.com"
+    },
+    "main": "tvdb.js",
+    "license": "MIT",
+    "keywords": [
+        "tvdb",
+        "thetvdb",
+        "api",
+        "wrapper"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vankasteelj/tvdbapi.git"
+    },
+    "dependencies": {
+        "got": "^6.7.1"
+    }
+}

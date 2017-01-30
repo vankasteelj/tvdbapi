@@ -1,0 +1,97 @@
+{
+    "/login": {
+        "url": "/login",
+        "method": "POST",
+        "body": {
+            "apikey": null
+        }
+    },
+    "/refresh_token": {
+        "url": "/refresh_token"
+    },
+    "/episodes/get": {
+        "url": "/episodes/:id"
+    },
+    "/languages/all": {
+        "url": "/languages"
+    },
+    "/languages/get": {
+        "url": "/languages/:id"
+    },
+    "/search/series": {
+        "url": "/search/series"
+    },
+    "/": {
+        "url": "/search/series/params"
+    },
+    "/": {
+        "url": "/series/:id"
+    },
+    "/": {
+        "url": "/series/:id/actors"
+    },
+    "/": {
+        "url": "/series/:id/episodes"
+    },
+    "/": {
+        "url": "/series/:id/episodes/query"
+    },
+    "/": {
+        "url": "/series/:id/episodes/query/params"
+    },
+    "/": {
+        "url": "/series/:id/episodes/summary"
+    },
+    "/": {
+        "url": "/series/:id/filter"
+    },
+    "/": {
+        "url": "/series/:id/filter/params"
+    },
+    "/": {
+        "url": "/series/:id/images"
+    },
+    "/": {
+        "url": "/series/:id/images/query"
+    },
+    "/": {
+        "url": "/series/:id/images/query/params"
+    },
+    "/": {
+        "url": "/updated/query"
+    },
+    "/": {
+        "url": "/updated/query/params"
+    },
+    "/": {
+        "url": "/user"
+    },
+    "/": {
+        "url": "/user/favorites"
+    },
+    "/": {
+        "url": "/user/favorites/:id",
+        "method": "DELETE"
+    },
+    "/": {
+        "url": "/user/favorites/:id",
+        "method": "PUT"
+    },
+    "/": {
+        "url": "/user/ratings"
+    },
+    "/": {
+        "url": "/user/ratings/query"
+    },
+    "/": {
+        "url": "/user/ratings/query/params"
+    },
+    "/": {
+        "url": "/user/ratings/:itemType/:itemId/:itemRating",
+        "method": "PUT"
+    },
+    "/": {
+        "url": "/users/ratings/:itemType/:itemId",
+        "method": "DELETE"
+    }
+}
