@@ -77,20 +77,20 @@
         "method": "PUT",
         "auth": true
     },
-    "/users/ratings/all": {
+    "/user/ratings/all": {
         "url": "/user/ratings",
         "auth": true
     },
-    "/users/ratings/query": {
+    "/user/ratings/query": {
         "url": "/user/ratings/query?itemType=",
         "auth": true,
         "optional": ["itemType"]
     },
-    "/users/ratings/get_query_params": {
+    "/user/ratings/get_query_params": {
         "url": "/user/ratings/query/params",
         "auth": true
     },
-    "/users/rate": {
+    "/user/rate": {
         "url": "/user/ratings/:itemType/:itemId/:itemRating",
         "method": "PUT",
         "auth": true
