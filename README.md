@@ -23,10 +23,14 @@ const tvdb = new (require('tvdbapi'))({
 ### user login
 
 ```js
-tvdb._login({username: <your_username>, userkey: <your_userkey>})
+tvdb.login({username: <your_username>, userkey: <your_userkey>})
   .then(auth => console.log('connected', auth))
   .catch(console.error);
 ```
+
+### calls
+
+The module is using a built-in login function, so you don't have to mess around with sessions. All available calls are listed in the `methods.json` file, and available on [the wiki](https://github.com/vankasteelj/tvdbapi/wiki/available-API-calls).
 
 ## License 
 
