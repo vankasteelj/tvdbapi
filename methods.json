@@ -1,14 +1,4 @@
 {
-    "/login": {
-        "url": "/login",
-        "method": "POST",
-        "body": {
-            "apikey": null
-        }
-    },
-    "/refresh_token": {
-        "url": "/refresh_token"
-    },
     "/episodes/details": {
         "url": "/episodes/:id"
     },
