@@ -78,7 +78,7 @@ module.exports = class TVDB {
 
     // Parse url before api call
     _parse(method, params = {}) {
-        // TODO: need auth?
+        if (method.auth && !this._authentication.token && !this._authentication.userkey) throw Error('requires user authentication');
 
         const queryParts = [];
         const pathParts = [];
