@@ -26,7 +26,7 @@ module.exports = class TVDB {
         this._construct();
     }
 
-    _login(opts = {}) {
+    login(opts = {}) {
         let auth = {apikey: this._settings.apikey};
 
         if (opts.username && opts.userkey) {
@@ -125,7 +125,7 @@ module.exports = class TVDB {
 
     // Parse methods then hit API
     _call(method, params) {
-        return this._login().then(() => {
+        return this.login().then(() => {
             const req = {
                 method: method.method || 'GET',
                 url: this._parse(method, params),
