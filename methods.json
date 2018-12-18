@@ -28,7 +28,7 @@
     "/series/episodes/query": {
         "url": "/series/:id/episodes/query?absoluteNumber=&airedSeason=&airedEpisode=&dvdSeason=&dvdEpisode=&imdbId=&firstAired=",
         "pagination": true,
-        "optional": ["absoluteNumber", "airedSeason", "airedEpisode", "dvdSeason", "dvdEpisode", "imdbId"]
+        "optional": ["absoluteNumber", "airedSeason", "airedEpisode", "dvdSeason", "dvdEpisode", "imdbId", "firstAired"]
     },
     "/series/episodes/get_query_params": {
         "url": "/series/:id/episodes/query/params"
