@@ -1,6 +1,6 @@
 {
     "name": "tvdbapi",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "description": "thetvdb.com api wrapper",
     "author": {
         "name": "vankasteelj",
@@ -19,6 +19,6 @@
         "url": "https://github.com/vankasteelj/tvdbapi.git"
     },
     "dependencies": {
-        "got": "^9.5.0"
+        "got": "^11.8.2"
     }
 }

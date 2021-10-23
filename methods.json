@@ -1,103 +1,173 @@
 {
-    "/episodes/details": {
-        "url": "/episodes/:id"
-    },
-    "/languages/all": {
-        "url": "/languages"
-    },
-    "/languages/details": {
-        "url": "/languages/:id"
-    },
-    "/search/series": {
-        "url": "/search/series?name=&imdbId=&zap2itId=",
-        "optional": ["name", "imdbId", "zap2itId"]
-    },
-    "/search/get_series_params": {
-        "url": "/search/series/params"
-    },
-    "/series/details": {
-        "url": "/series/:id"
-    },
-    "/series/actors": {
-        "url": "/series/:id/actors"
-    },
-    "/series/episodes/all": {
-        "url": "/series/:id/episodes",
-        "pagination": true
-    },
-    "/series/episodes/query": {
-        "url": "/series/:id/episodes/query?absoluteNumber=&airedSeason=&airedEpisode=&dvdSeason=&dvdEpisode=&imdbId=&firstAired=",
-        "pagination": true,
-        "optional": ["absoluteNumber", "airedSeason", "airedEpisode", "dvdSeason", "dvdEpisode", "imdbId", "firstAired"]
-    },
-    "/series/episodes/get_query_params": {
-        "url": "/series/:id/episodes/query/params"
-    },
-    "/series/episodes/summary": {
-        "url": "/series/:id/episodes/summary"
-    },
-    "/series/episodes/filter": {
-        "url": "/series/:id/filter?keys="
-    },
-    "/series/episodes/get_filter_params": {
-        "url": "/series/:id/filter/params"
-    },
-    "/series/images/all": {
-        "url": "/series/:id/images"
-    },
-    "/series/images/query": {
-        "url": "/series/:id/images/query?keyType=&resolution=&subKey=",
-        "optional": ["keyType", "resolution", "subKey"]
-    },
-    "/series/images/get_query_params": {
-        "url": "/series/:id/images/query/params"
-    },
-    "/updated/query": {
-        "url": "/updated/query?fromTime=&toTime=",
-        "optional": ["toTime"]
-    },
-    "/updated/get_query_params": {
-        "url": "/updated/query/params"
-    },
-    "/user/details": {
-        "url": "/user",
-        "auth": true
-    },
-    "/user/favorites/all": {
-        "url": "/user/favorites",
-        "auth": true
-    },
-    "/user/favorites/remove": {
-        "url": "/user/favorites/:id",
-        "method": "DELETE",
-        "auth": true
-    },
-    "/user/favorites/add": {
-        "url": "/user/favorites/:id",
-        "method": "PUT",
-        "auth": true
-    },
-    "/user/ratings/all": {
-        "url": "/user/ratings",
-        "auth": true
-    },
-    "/user/ratings/query": {
-        "url": "/user/ratings/query?itemType=",
-        "auth": true,
-        "optional": ["itemType"]
-    },
-    "/user/ratings/get_query_params": {
-        "url": "/user/ratings/query/params",
-        "auth": true
-    },
-    "/user/rate": {
-        "url": "/user/ratings/:itemType/:itemId/:itemRating",
-        "method": "PUT",
-        "auth": true
-    },
-    "/user/unrate": {
-        "url": "/users/ratings/:itemType/:itemId",
-        "method": "DELETE",
-        "auth": true
-    }
+  "/artwork/get": {
+    "url": "/artwork/:id"
+  },
+  "/artwork/extended": {
+    "url": "/artwork/:id/extended"
+  },
+  "/artwork/statuses": {
+    "url": "/artwork/statuses"
+  },
+  "/artwork/types": {
+    "url": "/artwork/types"
+  },
+  "/awards/all": {
+    "url": "/awards"
+  },
+  "/awards/get": {
+    "url": "/awards/:id"
+  },
+  "/awards/extended": {
+    "url": "/awards/:id/extended"
+  },
+  "/awards/categories/get": {
+    "url": "/awards/categories/:id"
+  },
+  "/awards/categories/extended": {
+    "url": "/awards/categories/:id/extended"
+  },
+  "/characters/get": {
+    "url": "/characters/:id"
+  },
+  "/companies/all": {
+    "url": "/companies",
+    "pagination": true
+  },
+  "/companies/types": {
+    "url": "/companies/types"
+  },
+  "/companies/get": {
+    "url": "/companies/:id"
+  },
+  "/content/ratings": {
+    "url": "/content/ratings"
+  },
+  "/countries": {
+    "url": "/countries"
+  },
+  "/entities/types": {
+    "url": "/entities/types"
+  },
+  "/episodes/get": {
+    "url": "/episodes/:id"
+  },
+  "/episodes/extended": {
+    "url": "/episodes/:id/extended?meta=",
+    "optional": ["meta"]
+  },
+  "/episodes/translations": {
+    "url": "/episodes/:id/translations/:language"
+  },
+  "/genders": {
+    "url": "/genders"
+  },
+  "/genres/all": {
+    "url": "/genres"
+  },
+  "/genres/get": {
+    "url": "/genres/:id"
+  },
+  "/inspiration/types": {
+    "url": "/inspiration/types"
+  },
+  "/languages": {
+    "url": "/languages"
+  },
+  "/lists/all": {
+    "url": "/lists",
+    "pagination": true
+  },
+  "/lists/get": {
+    "url": "/lists/:id"
+  },
+  "/lists/extended": {
+    "url": "/lists/:id/extended"
+  },
+  "/lists/translations": {
+    "url": "/lists/:id/translations/:language"
+  },
+  "/movies/all": {
+    "url": "/movies",
+    "pagination": true
+  },
+  "/movies/get": {
+    "url": "/movies/:id"
+  },
+  "/movies/extended": {
+    "url": "/movies/:id/extended?meta=",
+    "optional": ["meta"]
+  },
+  "/movies/translations": {
+    "url": "/movies/:id/translations/:language"
+  },
+  "/movies/statuses": {
+    "url": "/movies/statuses"
+  },
+  "/people/get": {
+    "url": "/people/:id"
+  },
+  "/people/extended": {
+    "url": "/people/:id/extended?meta=",
+    "optional": ["meta"]
+  },
+  "/people/translations": {
+    "url": "/people/:id/translations/:language"
+  },
+  "/people/types": {
+    "url": "/people/types"
+  },
+  "/search": {
+    "url": "/search?q=&query=&type=&remote_id=&year=&offset=&limit=",
+    "optional": ["q", "query", "type", "remote_id", "year", "offset", "limit"]
+  },
+  "/seasons/all": {
+    "url": "/seasons",
+    "pagination": true
+  },
+  "/seasons/get": {
+    "url": "/seasons/:id"
+  },
+  "/seasons/extended": {
+    "url": "/seasons/:id/extended"
+  },
+  "/seasons/types": {
+    "url": "/seasons/types"
+  },
+  "/seasons/translations": {
+    "url": "/seasons/:id/translations/:language"
+  },
+  "/series/all": {
+    "url": "/series",
+    "pagination": true
+  },
+  "/series/get": {
+    "url": "/series/:id"
+  },
+  "/series/extended": {
+    "url": "/series/:id/extended?meta=",
+    "optional": ["meta"]
+  },
+  "/series/episodes/season-type": {
+    "url": "/series/:id/episodes/:season-type?season=&episodeNumber=",
+    "pagination": true,
+    "optional": ["season", "episodeNumber"]
+  },
+  "/series/episodes/lang": {
+    "url": "/series/:id/episodes/:season-type/:lang",
+    "pagination": true
+  },
+  "/series/translations": {
+    "url": "/series/:id/translations/:language"
+  },
+  "/series/statuses": {
+    "url": "/series/statuses"
+  },
+  "/sources/types": {
+    "url": "/sources/types"
+  },
+  "/updates": {
+    "url": "/updates?since=&type=&action=",
+    "pagination": true,
+    "optional": ["type", "action"]
+  }
 }

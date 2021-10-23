@@ -1,6 +1,6 @@
 # TheTVDB Api
 
-Node.js wrapper for thetvdb.com [rest API](https://api.thetvdb.com/swagger)
+Node.js wrapper for thetvdb.com [rest API v4](https://thetvdb.github.io/v4-api/)
 
 ### installation
 
@@ -13,17 +13,14 @@ npm install tvdbapi
 ```js
 const tvdb = new (require('tvdbapi'))({
     apikey: <your_api_key>
-    endpoint: //optional
-    version: //optional
-    language: //optional
-});
+})
 ```
 
 
 ### user login
 
 ```js
-tvdb.login({username: <your_username>, userkey: <your_userkey>})
+tvdb.login({pin: <your_pin>})
   .then(auth => console.log('connected', auth))
   .catch(console.error);
 ```
@@ -34,7 +31,7 @@ The module is using a built-in login function, so you don't have to mess around 
 
 ## License 
 
-The MIT License - Copyright (c) 2017 Jean van Kasteel <vankasteelj@gmail.com>
+The MIT License - Copyright (c) 2021 Jean van Kasteel <vankasteelj@gmail.com>
 
 >Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
