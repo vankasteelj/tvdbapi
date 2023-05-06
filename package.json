@@ -19,6 +19,6 @@
         "url": "https://github.com/vankasteelj/tvdbapi.git"
     },
     "dependencies": {
-        "got": "^11.8.2"
+        "got": "11.8.6"
     }
 }
