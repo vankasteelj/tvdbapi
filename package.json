@@ -1,6 +1,6 @@
 {
     "name": "tvdbapi",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "thetvdb.com api wrapper",
     "author": {
         "name": "vankasteelj",
