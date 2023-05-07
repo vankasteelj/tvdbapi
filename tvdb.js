@@ -125,7 +125,7 @@ module.exports = class TVDB {
 
   // Parse methods then hit API
   _call(method, params) {
-    return this.login().then(() => {
+    return this.login(this._authentication).then(() => {
       const url = this._parse(method, params)
       const req = {
         method: method.method || 'GET',
