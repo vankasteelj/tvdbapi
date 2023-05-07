@@ -133,7 +133,7 @@ module.exports = class TVDB {
           'Authorization': 'Bearer ' + this._authentication.token
         }, this._settings.headers)
       }
-      
+
       if (req.method !== 'GET') {
         req.body = (method.body ? Object.assign({}, method.body) : {})
         for (let k in params) {
