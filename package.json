@@ -22,6 +22,6 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "axios": "11.8.6"
+    "got": "11.8.6"
   }
 }
