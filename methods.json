@@ -140,6 +140,11 @@
     "url": "/series",
     "pagination": true
   },
+  "/series/filter": {
+    "url": "/series/filter?country=&lang=&sort=&sortType=&company=&contentRating=&genre=&status=&year=",
+    "pagination": true,
+    "optional": ["country", "lang", "sort", "sortType", "company", "contentRating", "genre", "status", "year"]
+  },
   "/series/get": {
     "url": "/series/:id"
   },
